@@ -1,6 +1,6 @@
-{:desc "TODO",
+{:desc "My Light Table configuration",
  :version "0.0.1",
- :source "TODO",
+ :source "https://github.com/Hardtack/",
  :behaviors "user.behaviors",
  ;; Do not edit - :dependencies are auto-generated
 :dependencies {
@@ -16,5 +16,5 @@
  "gibo" "0.3.3",
  "gitlight" "0.0.9",
  "smart-ignore" "0.2.0"},
- :author "TODO",
+ :author "Geonu Choi",
  :name "User"}

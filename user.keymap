@@ -1,0 +1,30 @@
+;; User keymap
+;; -----------------------------
+;; Keymaps are stored as a set of diffs that are merged together to create
+;; the final set of keys. You can modify these diffs to either add or
+;; subtract bindings.
+;;
+;; Like behaviors, keys are bound by tag. When objects with those tags are active
+;; the key bindings are live. Keys can be bound to any number of Light Table commands,
+;; allowing you the flexibility to execute multiple operations together. To see a list
+;; of all the commands you can execute, start typing a word related to the thing you
+;; want to do in between the square brackets (e.g. type "editor").
+
+[
+ [:editor "alt-w" :editor.watch.watch-selection]
+ [:editor "alt-shift-w" :editor.watch.unwatch]
+ [:app "alt-space" :show-commandbar]
+ [:app "-ctrl-space"]
+
+ [:editor "alt-up" :editor.sublime.swapLineUp]
+ [:editor "alt-down" :editor.sublime.swapLineDown]
+
+ [:editor "ctrl-o" :editor.sublime.insertLineAfter :smart-indent-selection]
+ [:editor "alt-o" :editor.sublime.insertLineBefore :smart-indent-selection]
+
+ [:editor "ctrl-k" :editor.kill-line]
+ [:editor "ctrl-j" :editor.sublime.joinLines]
+
+ [:editor "alt-shift-." :editor.doc-end :editor.selection.clear]
+ [:editor "alt-shift-," :editor.doc-start :editor.selection.clear]
+ ]
